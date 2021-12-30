@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,100&display=swap');
+*{
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif
+}
+body
+{
+background-color: #FFFFFF;
+}
+.header{
+    display: fixed;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #FFFFFF;
+    font-size: 23px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+  }
+  a.active,a:hover{
+    background: rgb(212, 180, 241);
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color:black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+.main-content{
+    min-height: 30vh;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: max-content;
+    padding: 0 20px;
+    
+}
+.left-section{
+    grid-column: span 3;
+    height: 100%;
+   background-color: #292527;
+   padding: 30px;
+}
+
+.left-content{
+padding: 1rem 4rem;
+}
+.profile{
+width: 100%;
+border-bottom: 2px solid #f7f7f7;
+}
+
+.profile img{
+    width: 100%;
+   
+
+}
+.name{
+    font-size: 24px;
+    text-align: center;
+    text-transform: unset;
+    letter-spacing: 3px;
+    color: #f7f7f7;
+}
+.name-prof{
+    font-size: 20px;
+    text-align: center;
+    text-transform: unset;
+    letter-spacing: 2px;
+   
+}
+.contact_wrap bp{
+    padding-bottom: 20px;
+   
+}
+.title{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: black;
+    text-align:center;
+}
+
+
+.contact .icon {
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px 30px;
+ }
+ .contact .text{
+     color: black;
+ }
+ .contact .li_wrap{
+     display: flex;
+     align-items: center;
+     width: 100%;
+     font-size: 20px; 
+    
+ }
+ .main-title{
+     font-size: 30px;
+     text-align:center;
+ }
+ .skills-title{
+     font-size: 20px;
+ }
+ .skills-section ul{
+    padding-top: 2rem;
+}
+.skills-section ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+}
+
+.progress-bar{
+    width: 80%;
+    height: .4rem;
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 12px;
+}
+.progress{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #886775;
+    border-radius: 12px;
+}
+.HTML-progress{
+    width: 100%;
+}
+.CSS-progress{
+    width: 90%;
+}
+.js-progress{
+    width: 30%;
+}
+.right-section{
+    grid-column: span 4;
+    background-color: #fcfafa;
+    height: 100%;
+    padding: 20px;
+ }
+ .right-main-content{
+    padding: 0;
+}
+
+
+.right-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1.2rem;
+    
+}
+
+.para{
+    line-height: 20px;
+    color: #718096;
+}
+.other {
+	margin-top: 3px;
+}
+.title-ed {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: black;
+    position: relative;
+    text-align: left;
+}
+.other ul{
+    padding-top: 1rem;
+    position: relative;
+    
+}
+.other ul li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+}
+.date {
+    width: 125px;
+    color: #9153c9;
+    font-size: 24px;
+}
+.info{
+	padding-left: 50px 10px;
+	position: unset;
+    font-weight: 300;
+	margin-top: 3px;
+    font-size: 22px;
+}
+.info a{
+    text-decoration: none;
+    color: black;
+    font-family: 700;
+}
+.bold::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: .2rem;
+    background-color: #ccc;
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+}
+footer{
+    padding: 0 20px;
+}
+.foot {
+	max-width: 100%;
+    margin: 20px auto 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    
+
+   
+}
+.foot a {
+    text-decoration: none;
+    font-weight: 900;
+    color: black;
+    font-size: 20px;
+}
+.foot h5{
+    font-weight: 900;
+    color: black;
+    font-size: 20px;
+    align-items: flex-end;
+    margin: 0;
+}
+
+
+@media screen and (max-width:1200px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .profile {
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 40px;
+    }
+    .contact {
+        text-align: center;
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+    body {
+        max-width: 100%;
+    }
+    .profile {
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .name {
+        font-size: 30px;
+        color: #FFFFFF;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 15px 0;
+    }
+   
+}
+
+
+@media screen and (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    .header_list{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #a09b9b;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+      text-decoration: none;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #f7f7f7;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+   
+  }
+  @media screen and (max-width:650px){
+    .header {
+        margin-top: 5px;
+        flex-direction: column;
+        align-items:flex-start;
+    }
+    
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 5px;
+    }
+    .name{
+        font-size: 1.5rem;
+    }
+    .profile {
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .foot a {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+  }
